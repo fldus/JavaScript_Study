@@ -1,0 +1,8 @@
+
+.alert-box {
+    background: #b6b6fd;
+    color: blue;
+    padding: 20px;
+    border-radius: 5px;
+    display: none;
+}
