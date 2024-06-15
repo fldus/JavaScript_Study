@@ -8,9 +8,9 @@
 <body>
     <div class = "alert-box", id="alert">
         <p>Alert 박스</p>
-        <button onclick="document.getElementById('alert').style.display = 'none';">닫기</button>
+        <button onclick="알림창닫기()">닫기</button>
     </div>
-    <button onclick="document.getElementById('alert').style.display = 'block';">버튼</button>
+    <button onclick="알림창열기()">버튼</button>
 
     <!-- UI만드는 법
     1. 미리 디자인해놓고 숨긴다.
@@ -18,6 +18,13 @@
     
    <script>
        
+       function 알림창열기(){
+           document.getElementById('alert').style.display = 'block';
+       }
+       
+       function 알림창닫기(){
+           document.getElementById('alert').style.display = 'none';
+       }
 
    </script>
 </body>
