@@ -7,23 +7,21 @@
 </head>
 <body>
     <div class = "alert-box", id="alert">
-        <p>Alert 박스</p>
-        <button onclick="알림창닫기()">닫기</button>
+        <p id=title>Alert 박스</p>
+        <button onclick="알림창닫기('none')">닫기</button>
     </div>
-    <button onclick="알림창열기()">버튼</button>
-
-    <!-- UI만드는 법
-    1. 미리 디자인해놓고 숨긴다.
-    2. 버튼 누르거나 하면 보여준다. -->
+    <button onclick="알림창('아이디를 입력하세요')">버튼1</button>
+    <button onclick="알림창('비번을 입력하세요')">버튼2</button>
     
    <script>
        
-       function 알림창열기(){
-           document.getElementById('alert').style.display = 'block';
+       function 알림창닫기(구멍){
+            document.getElementById('alert').style.display = 구멍;
        }
        
-       function 알림창닫기(){
-           document.getElementById('alert').style.display = 'none';
+       function 알림창(내용){
+           document.getElementById('title').innerHTML = 내용;
+           document.getElementById('alert').style.display = 'block';
        }
 
    </script>
