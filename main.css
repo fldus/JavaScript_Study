@@ -1,3 +1,6 @@
+.yellow-bg{
+    background: yellow;
+}
 
 .alert-box {
     background: #b6b6fd;
@@ -5,4 +8,9 @@
     padding: 20px;
     border-radius: 5px;
     display: none;
+}
+
+
+.alert-box p{
+    display: inline;
 }
